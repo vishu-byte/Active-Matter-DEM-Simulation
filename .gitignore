@@ -1,0 +1,6 @@
+source/.vscode/
+build*
+init_state.txt
+ps/
+run.sh
+.vscode
