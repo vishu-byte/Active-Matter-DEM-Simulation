@@ -1,6 +1,25 @@
-//
-// Created by Vishu Saini on 31/08/23
-//
+/*MIT License
+
+* Copyright (c) [2024] [Vishu Saini]
+
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+
+* The above copyright notice and this permission notice shall be included in all
+* copies or substantial portions of the Software.
+
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*/
 
 #ifndef PARTICLE_SIMULATION_PARTICLE_SYSTEM_H
 #define PARTICLE_SIMULATION_PARTICLE_SYSTEM_H
@@ -11,8 +30,16 @@
 #include <vector>
 #include <list>
 
-namespace ParSim { // for particle simulation
+namespace ParSim { 
 
+
+/**
+ * Handling creation of particle objects and their attributes
+ *
+ * Partilces' attributes like there position, velocities etc are 
+ * handled using this class
+ *
+ */
 class Particle {
 
 public:
@@ -60,6 +87,13 @@ public:
   void circ_initialize(int, double, double);    // lattice initializes in circle
 };
 
+/**
+ * Handling creation of a system of particles
+ *
+ * Creation of a system of particles with given number of particles and 
+ * system size is handled using this class
+ *
+ */
 class ParticleSystem {
 public:
   int no_of_particles;
@@ -86,14 +120,7 @@ public:
   double dist_from_origin(Particle &par);
 };
 
-class Boxresize {
-public:
-  double L;
-  double phi;
 
-public:
-  Boxresize(){};
-};
 
 } // namespace ParSim
 

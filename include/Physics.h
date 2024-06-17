@@ -14,7 +14,14 @@
 #include <vector>
 
 namespace ParSim { // for particle simulation
-
+/**
+ * For managing physics part of the simulation
+ *
+ * Evolution of a particle system in time is handled
+ * using methods of this class. Evolution equations are
+ * Newton's dyanmical equations.
+ *
+ */
 class Physics { // class responsible for handling all physics behind the
                 // simulation
 public:
@@ -72,6 +79,11 @@ public:
   std::vector<double> EnergyMomentum(ParticleSystem &);
 };
 
+/**
+ * For systems whose evolution is governed by Langevin equations
+ *
+ *
+ */
 class Langevin_Dynamics{
 public:
   double parameters[14];
