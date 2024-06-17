@@ -1,3 +1,27 @@
+/*MIT License
+
+* Copyright (c) [2024] [Vishu Saini]
+
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+
+* The above copyright notice and this permission notice shall be included in all
+* copies or substantial portions of the Software.
+
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*/
+
+
 #include "../include/Physics.h"
 #include <bits/types/time_t.h>
 #include <cmath>
@@ -83,29 +107,11 @@ int main() {
 
   double Pecr = 50; // rotational Peclet number
 
-  /* 2)Reading initial state positions*/
+  // 2)Reading initial state positions
 
-  // std::ifstream input_state("init_state.txt");
-  // int i = 0;
-  // double temp;
+  /*If desired, one can read initial state from a file*/
 
-  // if (!input_state) { // file couldn't be opened
-  //   std::cerr << "\033[31mError: Init_state file could not be opened"
-  //             << std::endl;
-  //   exit(1);
-  // }
-
-  // while (input_state >> particle[i].x >>
-  //        particle[i].y) { // read particle x and y and z in temp
-  //   i++;
-  // }
-
-  // std::cout << "\033[32mInput state read for " << i << " particles ..."
-  //           << std ::endl;
-
-  // input_state.close();
-
-  // 3)Creating a data file for storage and log-----------
+  // 3) Creating a data file for storage and log-----------
 
   std::ofstream data_output;
   std::ofstream log;

@@ -21,6 +21,17 @@
 * SOFTWARE.
 */
 
+
+/**
+ * @file ParticleSystem.h
+ *
+ * @brief Contains classes Particles and ParticleSystem
+ *
+ * @author Vishu Saini
+ * Contact: vishusaini220301@gmail.com
+ *
+ */
+
 #ifndef PARTICLE_SIMULATION_PARTICLE_SYSTEM_H
 #define PARTICLE_SIMULATION_PARTICLE_SYSTEM_H
 
